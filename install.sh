@@ -26,7 +26,7 @@ fi
 # -----------------------------------------------------------
 echo "🖥️ Installing libraries for Electron (Headless/GUI support)..."
 sudo apt-get update
-# Electron이 리눅스에서 실행되기 위해 필요한 의존성 패키지들 (매우 중요)
+# Ubuntu 24.04 (Noble) 호환 패키지명 적용 (libasound2 -> libasound2t64)
 sudo apt-get install -y \
     xvfb \
     libnss3 \
@@ -35,7 +35,7 @@ sudo apt-get install -y \
     libcups2 \
     libgtk-3-0 \
     libgbm1 \
-    libasound2 \
+    libasound2t64 \
     libxss1
 
 # -----------------------------------------------------------
